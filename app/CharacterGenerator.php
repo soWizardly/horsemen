@@ -17,11 +17,11 @@
       $spells = ["Fireball", "Scorching Ray"];
 
       return new Wizard(
-        $name[rand(0 - 3)],
+        $name[rand(0,3)],
         rand(1, 1000),
         rand(1, 100),
-        rand(1 - 10),
-        $spells[rand(0 - 1)]
+        rand(1, 10),
+        $spells[rand(0, 1)]
       );
     }
   }
