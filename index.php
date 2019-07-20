@@ -1,8 +1,10 @@
 <?php
 
-include "app/Character.php";
+  # Ignore this...
+  include "app/Character.php";
+  include "app/Wizard.php";
 
-use Horsemen\Character as FuckFace;
+  use Horsemen\Wizard;
 
-$character = new FuckFace("Phil");
-echo $character->name;
+  $character = new Wizard("Phil", 1000, 100, 10, ["Fireball"]);
+  echo $character->name;
