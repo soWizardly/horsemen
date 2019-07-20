@@ -3,8 +3,9 @@
   # Ignore this...
   include "app/Character.php";
   include "app/Wizard.php";
+  include "app/CharacterGenerator.php";
 
-  use Horsemen\Wizard;
+  use Horsemen\CharacterGenerator;
 
-  $character = new Wizard("Phil", 1000, 100, 10, ["Fireball"]);
+  $character = (new CharacterGenerator)->generate();
   echo $character->name;
